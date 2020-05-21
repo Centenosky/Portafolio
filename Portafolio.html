@@ -3,65 +3,146 @@
   <head>
     <meta charset="UTF-8">  
     <title>Diego Centeno</title>   
-		<link rel="shortcut icon" href="darth-vader.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="darth-vader.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="estilos.css">
   </head>
   <body>
     <header>
-      <div>
-        <figure>
-          <img src="darth-vader.ico" alt="Loguito">
+      <div class="container">
+        <figure class="logo">
+          <img src="logo-dv3.png" alt="Loguito" height="85px">
         </figure>
-        <nav>
+        <nav class="menu">
           <ul>
             <li>
-              <a href="#portafolio">Portafolio</a>
+              <a class="link" href="#portafolio">Portafolio</a>
             </li>
             <li>
-              <a href="#eventos">Experiencia</a>
+              <a class="link" href="#eventos">Experiencia</a>
             </li>
             <li>
-              <a href="#contacto">Trabajemos juntos</a>
+              <a class="link" href="#contacto">Trabajemos juntos</a>
             </li>
           </ul>
         </nav>
       </div>
-      </header>
-      <section>
-        <h1>
-					Hola! Soy <strong>Diego Centeno</strong> <br/>un humilde <strong>seguidor</strong> <br/>del <strong>lado ocuro</strong>
-				</h1>
-				<img src="darth-vader.jpg" alt="" width="500" height="300">
+    </header>
+      <section class="hero">
+        <div class="container">
+          <h1>
+            Hola! Soy <strong>Diego Centeno</strong> <br/>Humilde <strong>seguidor</strong> del lado oscuro<br/> Welcome to the <strong>dark side!</strong>
+          </h1>
+          <img class="hero-image" src="hero.jpg" alt="" width="500px" height="300px">
+        </div>
       </section>
-      <section id="portafolio">
-        <h2>Portafolio (Proyectos Destacados)</h2>
-        <article>
-          <h3>Personajes Favoritos</h3>
-          <h6> HTML, CSS, JS</h6>
-          <p><small><strong>Fecha:</strong> 01/04/2020</small></p>
-          <p><small><strong>Puedes verlo en: </strong> www.github.io</small></p>
-          <p>Esto fue simplemente una semi-pagina creada por que estaba aburrido JAJAJA</p>
-				<img src="" alt="" width="500">
-				</article>
+      <section id="portafolio" class="portfolio">
+        <div class="container">
+          <h2>Portafolio (Proyectos Destacados)</h2>
+          <article class="project">
+            <div class="project-details">
+              <h3 class="projet-title">Personajes Favoritos</h3>
+              <h6 class="project-course"> HTML, CSS, JS</h6>
+              <p class="project-date"><small><strong>Fecha:</strong> 01/04/2020</small></p>
+              <p class="project-description"><small><strong>Puedes verlo en: </strong> www.github.io</small></p>
+              <p>Esto fue simplemente una semi-pagina creada por que estaba aburrido JAJAJA, ahi estan mis personajes favoritos y un carousel de cada uno
+                con sus imagenes y una pequeña descripcion, fue el resultado de una semana.
+              </p>
+            </div>
+            <figure class="project-imageContainer">
+             <img class="project-image" src="project1.jpg" alt="" width="500">
+            </figure>
+          </article>
+          <article class="project">
+            <div class="project-details">
+              <h3 class="projet-title">Personajes Favoritos</h3>
+              <h6 class="project-course"> HTML, CSS, JS</h6>
+              <p class="project-date"><small><strong>Fecha:</strong> 01/04/2020</small></p>
+              <p class="project-url"><small><strong>Puedes verlo en: </strong> www.github.io</small></p>
+              <p class="project-description">Esto fue simplemente una semi-pagina creada por que estaba aburrido JAJAJA, ahi estan mis personajes favoritos y un carousel de cada uno
+                con sus imagenes y una pequeña descripcion, fue el resultado de una semana.
+              </p>
+            </div>
+            <figure class="project-imageContainer">
+             <img class="project-image" src="project1.jpg" alt="" width="500">
+            </figure>
+          </article>
+        </div>
       </section>
-      <section id="eventos">                    
-        <h2>Mas sobre mi experiencia</h2>
-        <article>
-          <figure>
-            <img src="" alt="" width="500">
-          </figure>
-          <h3>Hellouuu</h3>
-          <p>Do you want to play a game or Fortniteee?</p>
-          <a href="https://www.youtube.com/" target="_blank">Jugar ya!</a>
-        </article>
+      <div class="container">
+        <h2 class="event-list-title">Más sobre mi experiencia</h2>
+      </div>
+      <section id="eventos" class="event-list"> 
+        <div class="container">
+          <article class="event">
+            <figure class="event-imageContainer">
+              <img class="event-image" src="darth-vader.jpg" alt="" width="500">
+            </figure>
+            <div class="event-detail">
+              <h3 class="event-title">Hellouuu</h3>
+              <p class="event-description">Do you want to play a game or Fortniteee?</p>
+              <a class="event-url" href="https://www.youtube.com/" target="_blank">Jugar ya!</a>
+            </div>
+          </article>
+          <article class="event">
+            <figure class="event-imageContainer">
+              <img class="event-image" src="darth-vader.jpg" alt="" width="500">
+            </figure>
+            <div class="event-detail">
+              <h3 class="event-title">Hellouuu</h3>
+              <p class="event-description">Do you want to play a game or Fortniteee?</p>
+              <a class="event-url" href="https://www.youtube.com/" target="_blank">Jugar ya!</a>
+            </div>
+          </article>
+          <article class="event">
+            <figure class="event-imageContainer">
+              <img class="event-image" src="darth-vader.jpg" alt="" width="500">
+            </figure>
+            <div class="event-detail">
+              <h3 class="event-title">Hellouuu</h3>
+              <p class="event-description">Do you want to play a game or Fortniteee?</p>
+              <a class="event-url" href="https://www.youtube.com/" target="_blank">Jugar ya!</a>
+            </div>
+          </article>
+          <article class="event">
+            <figure class="event-imageContainer">
+              <img class="event-image" src="darth-vader.jpg" alt="" width="500">
+            </figure>
+            <div class="event-detail">
+              <h3 class="event-title">Hellouuu</h3>
+              <p class="event-description">Do you want to play a game or Fortniteee?</p>
+              <a class="event-url" href="https://www.youtube.com/" target="_blank">Jugar ya!</a>
+            </div>
+          </article>
+        </div>                   
       </section>
-      <section id="contacto">
-				<form action="/suscripcion/">
-					<h3>¿Creamos algo juntos?</h3>
-					<input type="text" placeholder="Déjame tu email" id="email">
-					<button>Enviar</button>
-				</form>
+      <section id="contacto" class="contact">
+        <div class="container">
+          <form action="/suscripcion/" class="form-email">
+            <h3>¿Creamos algo juntos?</h3>
+            <input type="text" placeholder="Déjame tu email" id="email">
+            <button>Enviar</button>
+          </form>
+          <div class="social">
+            <a href="https://twitter.com/DiegoCe47183660" class="social-link twitter"></a>
+            <a href="https://www.facebook.com/diegoivan.centenomercado" class="social-link facebook"></a>
+            <a href="https://instagram.com" class="social-link instagram"></a>
+            <a href="https://github.com/Skywalker0816" class="social-link github"></a>
+          </div>
+        </div>
 			</section>
-      <footer></footer>
+      <footer>
+        <div class="container">
+          <div>
+            <p>
+              Portafolio Diego Centeno
+              <img src="darth-vader.ico" alt="" width="80px">
+            </p>
+          </div>
+          <div>
+            <p> Made by Diego Centeno</p>
+          </div>
+        </div>
+      </footer>
   </body>
 </html>                          
