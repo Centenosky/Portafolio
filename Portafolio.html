@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8">  
     <title>Diego Centeno</title>   
-    <link rel="shortcut icon" href="darth-vader.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="iconos/darth-vader.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
-		<link rel="stylesheet" href="estilos.css">
+    <!-- <link rel="stylesheet" href="media.css" media="screen and (max-width:768px)"> -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
       <div class="container">
         <figure class="logo">
-          <img src="logo-dv3.png" alt="Loguito" height="85px">
+          <img src="iconos/logo-dv3.png" alt="Loguito" height="85px">
         </figure>
         <nav class="menu">
           <ul>
@@ -33,7 +35,7 @@
           <h1>
             Hola! Soy <strong>Diego Centeno</strong> <br/>Humilde <strong>seguidor</strong> del lado oscuro<br/> Welcome to the <strong>dark side!</strong>
           </h1>
-          <img class="hero-image" src="hero.jpg" alt="" width="500px" height="300px">
+          <img class="hero-image" src="imagenes/hero.jpg" alt="" width="500px" height="300px">
         </div>
       </section>
       <section id="portafolio" class="portfolio">
@@ -44,13 +46,13 @@
               <h3 class="projet-title">Personajes Favoritos</h3>
               <h6 class="project-course"> HTML, CSS, JS</h6>
               <p class="project-date"><small><strong>Fecha:</strong> 01/04/2020</small></p>
-              <p class="project-description"><small><strong>Puedes verlo en: </strong> www.github.io</small></p>
-              <p>Esto fue simplemente una semi-pagina creada por que estaba aburrido JAJAJA, ahi estan mis personajes favoritos y un carousel de cada uno
+              <p class="project-url"><small><strong>Puedes verlo en: </strong> www.github.io</small></p>
+              <p class="project-description">Esto fue simplemente una semi-pagina creada por que estaba aburrido JAJAJA, ahi estan mis personajes favoritos y un carousel de cada uno
                 con sus imagenes y una pequeña descripcion, fue el resultado de una semana.
               </p>
             </div>
             <figure class="project-imageContainer">
-             <img class="project-image" src="project1.jpg" alt="" width="500">
+             <img class="project-image" src="imagenes/project1.jpg" alt="" width="500">
             </figure>
           </article>
           <article class="project">
@@ -64,7 +66,7 @@
               </p>
             </div>
             <figure class="project-imageContainer">
-             <img class="project-image" src="project1.jpg" alt="" width="500">
+             <img class="project-image" src="imagenes/project1.jpg" alt="" width="500">
             </figure>
           </article>
         </div>
@@ -76,37 +78,41 @@
         <div class="container">
           <article class="event">
             <figure class="event-imageContainer">
-              <img class="event-image" src="darth-vader.jpg" alt="" width="500">
+              <img class="event-image" src="imagenes/darth-vader.jpg" alt="" width="500">
             </figure>
             <div class="event-detail">
               <h3 class="event-title">Hellouuu</h3>
               <p class="event-description">Do you want to play a game or Fortniteee?</p>
-              <a class="event-url" href="https://www.youtube.com/" target="_blank">Jugar ya!</a>
+              <a class="event-url" href="https://www.epicgames.com/fortnite/es-ES/download" target="_blank">Jugar ya!</a>
             </div>
           </article>
           <article class="event">
             <figure class="event-imageContainer">
-              <img class="event-image" src="darth-vader.jpg" alt="" width="500">
+              <img class="event-image" src="imagenes/darth-vader.jpg" alt="" width="500">
             </figure>
             <div class="event-detail">
               <h3 class="event-title">Hellouuu</h3>
               <p class="event-description">Do you want to play a game or Fortniteee?</p>
-              <a class="event-url" href="https://www.youtube.com/" target="_blank">Jugar ya!</a>
+              <a class="event-url" href="https://www.epicgames.com/fortnite/es-ES/download" target="_blank">Jugar ya!</a>
             </div>
           </article>
           <article class="event">
             <figure class="event-imageContainer">
-              <img class="event-image" src="darth-vader.jpg" alt="" width="500">
+              <div class="flexible-video">
+                <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/JgPXMxW7zJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <!-- <img class="event-image" src="darth-vader.jpg" alt="" width="500"> -->
             </figure>
             <div class="event-detail">
               <h3 class="event-title">Hellouuu</h3>
               <p class="event-description">Do you want to play a game or Fortniteee?</p>
-              <a class="event-url" href="https://www.youtube.com/" target="_blank">Jugar ya!</a>
+              <a class="event-url" href="https://www.epicgames.com/fortnite/es-ES/download" target="_blank">Jugar ya!</a>
             </div>
           </article>
           <article class="event">
             <figure class="event-imageContainer">
-              <img class="event-image" src="darth-vader.jpg" alt="" width="500">
+              <video class="html-video" src="Trailer Star Wars.mp4" width="2560" height="1080" controls></video>
+              <!-- <img class="event-image" src="darth-vader.jpg" alt="" width="500"> -->
             </figure>
             <div class="event-detail">
               <h3 class="event-title">Hellouuu</h3>
@@ -116,7 +122,7 @@
           </article>
         </div>                   
       </section>
-      <section id="contacto" class="contact">
+       <section id="contacto" class="contact">
         <div class="container">
           <form action="/suscripcion/" class="form-email">
             <h3>¿Creamos algo juntos?</h3>
@@ -136,7 +142,7 @@
           <div>
             <p>
               Portafolio Diego Centeno
-              <img src="darth-vader.ico" alt="" width="80px">
+              <img src="iconos/darth-vader.ico" alt="" width="55px">
             </p>
           </div>
           <div>
@@ -145,4 +151,4 @@
         </div>
       </footer>
   </body>
-</html>                          
+</html>   

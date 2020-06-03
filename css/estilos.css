@@ -1,0 +1,491 @@
+/* reglas
+selectores
+declaraciones
+propiedades
+valores */
+
+/* selector de etiqueta header - section - article - nav */
+
+/* selector descendente = es un elemento hijo 
+body header div nav ol li a */
+
+/* selector de clase . */
+
+/* selector de id # */
+
+/* --------------------------Final de comentarios----------------------- */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?dsa53m');
+  src:  url('fonts/icomoon.eot?dsa53m#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?dsa53m') format('truetype'),
+    url('fonts/icomoon.woff?dsa53m') format('woff'),
+    url('fonts/icomoon.svg?dsa53m#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+
+/* --------------------Final de el font-face de los iconos------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+/*   font-style: italic; */
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -.2px;
+  color: #ffffff;
+/*   text-transform: uppercase; */
+/*   text-decoration: dashed; */
+}
+
+h1 strong {
+  color: #026fff;
+}
+
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.hero {
+  height: 300px;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  object-fit: cover;
+}
+
+.portfolio {
+  background: #fafafa;
+  padding: 20px;
+}
+
+.project {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project-course,
+.project-date,
+.project-url {
+  margin-top: 10px;
+}
+
+.project-description {
+  font-size: 20px;
+ margin-top: 8px;
+}
+
+.project strong {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.project-details {
+  width: 47%;
+}
+
+.project-imageContainer {
+  width: 50%;
+}
+
+.project-imageContainer img {
+  max-width: 100%;
+}
+
+header {
+  background-color: #1b2127;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  flex-wrap: wrap;
+}
+
+menu{
+  height: inherit;
+}
+
+header ul {
+  display: flex;
+  height: inherit;
+}
+
+header ul li {
+  height: inherit;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  padding: 0 10px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+footer {
+  color: #ffffff;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer img {
+  vertical-align: middle;
+}
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.event-list-title {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.event {
+  margin: 1%;
+  width: 48%;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f4fbff;
+}
+
+.event-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.event-detail {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: #ffffff;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.event-description {
+  text-align: center; 
+  margin: 5px 0 20px 0;
+}
+
+.event-url {
+  color: #056fff;
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contact {
+  background-color: #056fff;
+  color: #ffffff;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+
+.social-link.twitter {
+  background-image: url("../iconos/twitter.svg");
+}
+
+.social-link.facebook{
+  background-image: url("../iconos/facebook.svg");
+}
+
+.social-link.instagram {
+  background-image: url("../iconos/instagram.svg");
+}
+
+.social-link.github {
+  background-image: url("../iconos/github.svg");
+}
+
+.form-email input{
+  border-color: gray;
+  border-style: solid;
+  padding: 10px 20px 10px 25px;
+  background-image: url("../iconos/envelope.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form-email button {
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  color: #ffffff;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.form-email h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 15px;
+}
+
+.container {
+  max-width: 1100px;
+  flex: 1;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+/* Cuando es desktop first es mejor empezar desde MQ mas grande */
+
+@media screen and (max-width: 1024px){
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+
+  .hero-image {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2em;
+    z-index: 2;
+  }
+
+  .container {
+    padding: 0 1em;
+  }
+}
+
+.html-video {
+  width: 100%;
+  height: auto;
+}
+
+.youtube-video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Para ajustar proporciones con videos insertados podemos hacer los siguiente: h * 100 / w
+La altura por 100 entre el ancho, lo que resulte va a ser el alto pero en porcentaje*/
+.flexible-video {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  background: blue;
+  position: relative;
+}
+
+
+@media screen and (max-width: 767px) {
+  header {
+    display: block;
+    height: auto;
+  }
+
+  header ul {
+    display: initial;
+  }
+
+  header ul li {
+    height: 50px;
+  }
+
+  header a {
+    justify-content: center;
+  }
+
+  header .logo {
+    text-align: center;
+  }
+
+  .project {
+    display: block;
+  }
+
+  .project-imageContainer {
+    width: auto;
+    text-align: center;
+  }
+
+  .project-details {
+    width: auto;
+    font-size: 16px;
+  }
+
+  .project-course, .project-date, .project-url {
+    margin: .3em 0;
+  }
+
+  .project-title {
+    font-size: 1.5em;
+    margin-bottom: .3em;
+  }
+
+  .project-url {
+    font-size: 1em;
+  }
+
+  .project-course {
+    font-size: .7em;
+  }
+
+  .project-date {
+    font-size: 1em;
+  }
+
+  .project-description {
+    font-size: .8em;
+    margin-top: .25em;
+  }
+
+  .event {
+    width: auto;
+    flex-shrink: initial;
+  }
+}
+
+@media screen and (max-width:540px){
+
+  .contact {
+    height: auto;
+    padding: 1.5em 0;
+    display: block;
+    text-align: center;
+  }
+
+  .form-email button {
+    margin: 1em auto;
+  }
+
+  .form-email h3 {
+    margin-top: 0;
+  }
+
+}
+
+@media screen and (max-width:480px){
+  h1 {
+    font-size: 1.7em;
+  }
+
+  .project-details {
+    width: auto;
+    font-size: 12px;
+  }
+
+  .event-detail {
+    margin: -2.3em .8em .8em .8em;
+    padding: 1em;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+}
+
+@media screen and (max-width: 320px){
+  h1 {
+    font-size: 1.4em;
+  }
+
+  .hero {
+    padding: 2em 1em;
+  }
+}
