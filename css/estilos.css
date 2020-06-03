@@ -192,6 +192,12 @@ header a {
   height: inherit;
   display: flex;
   padding: 0 10px;
+  font-size: 1.1em;
+}
+
+header a:hover {
+  cursor: pointer;
+  color: #E6E8EC;
 }
 
 ul, li {
@@ -535,7 +541,7 @@ La altura por 100 entre el ancho, lo que resulte va a ser el alto pero en porcen
 }
 
 @media screen and (max-width:480px){
-  
+
   h1 {
     font-size: 1.7em;
   }
@@ -560,6 +566,10 @@ La altura por 100 entre el ancho, lo que resulte va a ser el alto pero en porcen
     width: 40px;
     height: 40px;
     background-size: 100%;
+  }
+
+  .icon-footer {
+    width: 40px;
   }
 }
 
